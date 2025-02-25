@@ -40,7 +40,7 @@ function App() {
         try {
           const module = await loadRemote<{
             default: React.ComponentType<any>;
-          }>(`./user-id-1-header`);
+          }>(`customized/user-id-1-header`);
           // Ensure we never return null.
           if (module === null) {
             return {
